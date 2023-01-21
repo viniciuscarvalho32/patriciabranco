@@ -1,0 +1,25 @@
+<header class="head">
+  <div>
+    <img a routerLink="/" class="logopati" src= "/assets/logopatricia.png"/>
+  </div>
+  <nav class="navebar">
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Cadastros</a>
+        <div class="dropdown-content">
+          <a routerLink="pacientes" (click)="clickPac()" [ngStyle]="{'color': colorPacientes}">Pacientes</a>
+          <a routerLink="obstetricia" (click)="clickObs()" [ngStyle]="{'color': colorObstetricia}">Obstetricia</a>
+          <a routerLink="ginecologia" (click)="clickGin()" [ngStyle]="{'color': colorGinecologia}">Ginecologia</a>
+        </div>
+      </li>
+      <!-- -->
+      <div class="dropbtn">
+        <li a routerLink="obstetricia" (click)="clickObs()" [ngStyle]="{'color': colorObstetricia}">Obstetricia</li>
+        <li a routerLink="ginecologia" (click)="clickGin()" [ngStyle]="{'color': colorGinecologia}">Ginecologia</li>
+        <li a routerLink="urgencias">Urgencias</li>
+      </div>
+    </ul>
+  </nav>
+</header>
+
+

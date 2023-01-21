@@ -1,0 +1,49 @@
+<section>
+  <div class="pacientes">
+    <!--(ngSubmit)="onSubmit()" -->
+    <form [formGroup]="pacienteForm" #FormDir="ngForm">
+      <fieldset>
+        <legend>Paciente</legend>
+        <label for="nompac">
+          <input type="text" placeholder="nome" id="nompac" formControlName="nome">
+        </label>
+        <label for="emapac">
+          <input type="text" placeholder="email" id="emapac" formControlName="email">
+        </label>
+        <label for="telpac">
+          <input type="text" placeholder="(xx) xxxxx-xxxx" id="telpac" formControlName="telefone">
+        </label>
+        <label for="idapac"></label>
+          <input type="number" placeholder="idade" id="idapac" min="1" max="100" formControlName="idade">
+        <label for="genpac">
+          <select formControlName="sexo" [(ngModel)]="genero" required>
+
+            <option value="" selected></option>
+            <option value="Masculino" name="mas">Masculino</option>
+            <option value="Feminino" name="fem">Feminino</option>
+            <option value="Indefinido" name="ndef">Não Definido</option>
+          </select>
+
+        </label>
+        <label for="pespac">
+          <input type="number" placeholder="peso" id="pespac" formControlName="peso">
+        </label>
+        <label for="altpac">
+          <input type="number" placeholder="altura" id="altpac" formControlName="altura">
+        </label>
+        <div class="btnpac">
+          <button value="gravar" name="gravar">Inserir</button>
+        </div>
+    </fieldset>
+    </form>
+  </div>
+  <div class="tabPac">
+</div>
+<app-table-patients [patients]="patients"></app-table-patients>
+</section>
+
+<h1>
+</h1>
+<div *ngFor="let item of patients">
+
+</div>

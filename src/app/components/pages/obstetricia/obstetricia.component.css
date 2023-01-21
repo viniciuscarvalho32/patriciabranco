@@ -1,0 +1,13 @@
+section {
+  margin: 0 auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 2em;
+}
+.linkteste {
+  font-weight: bolder;
+  font-size: 16pt;
+  background-color: rgb(194, 173, 213);
+}
+a:visited {
+  background-color: brown;
+}

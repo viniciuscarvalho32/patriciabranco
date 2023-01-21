@@ -1,0 +1,9 @@
+.data-patients {
+  width: 80%;
+  margin: 20px auto;
+}
+
+mat-cell {
+  padding: 2em;
+  background-color: bisque;
+}
